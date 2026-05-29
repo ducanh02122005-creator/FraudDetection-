@@ -1,9 +1,8 @@
 package com.example.frauddetection.controller.auth;
 
-import com.example.frauddetection.dtos.AuthenticationRequest;
-import com.example.frauddetection.dtos.AuthenticationResponse;
-import com.example.frauddetection.dtos.CreateAdminRequest;
-import com.example.frauddetection.dtos.RegisterRequest;
+import com.example.frauddetection.dtos.auth.AuthenticationRequest;
+import com.example.frauddetection.dtos.auth.AuthenticationResponse;
+import com.example.frauddetection.dtos.auth.RegisterRequest;
 import com.example.frauddetection.entity.user.Role;
 import com.example.frauddetection.service.userSerivice.AuthenticationService;
 import lombok.RequiredArgsConstructor;

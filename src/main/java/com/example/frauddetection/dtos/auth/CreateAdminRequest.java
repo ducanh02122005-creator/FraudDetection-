@@ -1,4 +1,4 @@
-package com.example.frauddetection.dtos;
+package com.example.frauddetection.dtos.auth;
 
 import lombok.*;
 

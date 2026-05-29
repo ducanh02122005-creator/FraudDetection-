@@ -1,8 +1,8 @@
 package com.example.frauddetection.service.userSerivice;
 
-import com.example.frauddetection.dtos.AuthenticationRequest;
-import com.example.frauddetection.dtos.AuthenticationResponse;
-import com.example.frauddetection.dtos.RegisterRequest;
+import com.example.frauddetection.dtos.auth.AuthenticationRequest;
+import com.example.frauddetection.dtos.auth.AuthenticationResponse;
+import com.example.frauddetection.dtos.auth.RegisterRequest;
 import com.example.frauddetection.config.JwtService;
 import com.example.frauddetection.entity.user.Role;
 import com.example.frauddetection.entity.user.User;
