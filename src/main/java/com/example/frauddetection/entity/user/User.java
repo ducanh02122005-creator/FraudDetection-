@@ -21,6 +21,7 @@ import java.util.List;
 @NoArgsConstructor
 @Table(name = "users")
 public class User implements UserDetails {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -35,8 +36,8 @@ public class User implements UserDetails {
     @Column(nullable = false, length = 50)
     private Role role;
 
-//    @OneToMany
-//    private List<Transaction> transaction;
+    @OneToMany(mappedBy = "user")
+    private List<Transaction> transactions;
 
 
     @Override

@@ -2,9 +2,11 @@ package com.example.frauddetection.controller.transaction;
 
 import com.example.frauddetection.dtos.transaction.TransactionRequest;
 import com.example.frauddetection.dtos.transaction.TransactionResponse;
+import com.example.frauddetection.entity.user.User;
 import com.example.frauddetection.service.transactionService.CreateTransactionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

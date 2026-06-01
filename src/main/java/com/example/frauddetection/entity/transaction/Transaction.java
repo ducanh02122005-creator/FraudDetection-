@@ -19,24 +19,29 @@ import java.time.format.DateTimeFormatter;
 @NoArgsConstructor
 @Table(name="transactions")
 public class Transaction {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long transactionId;
+
     @Column(nullable = false)
     private Double amount;
+
     @Column(nullable = false)
     private String merchant;
+
     @Column(nullable = false)
     private String category;
+
     @Column(nullable = false)
     private String location;
+
     @Column(nullable = false)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime date;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
-
-//    @ManyToOne
-//    @JoinColumn(name = "user_id")
-//    private User user;
 }
