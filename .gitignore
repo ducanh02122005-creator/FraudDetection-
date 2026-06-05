@@ -41,4 +41,5 @@ database.sql
 .mvn/
 target/
 *.jar
-/ml_service/
+ml_service/
+.onnx

@@ -13,7 +13,7 @@ public class FraudDetectionService {
     private final OnnxPredictionService onnxService;
     private final CategoryMapper categoryMapper;
 
-    public PredictionResponse predict(
+    public Boolean predict(
             PredictionRequest request
     ) throws Exception {
 
@@ -36,9 +36,6 @@ public class FraudDetectionService {
                 1.0 /
                         (1.0 + Math.exp(-logit));
 
-        return PredictionResponse.builder()
-                .fraudProbability(probability)
-                .fraud(probability > 0.5)
-                .build();
+        return probability >0.5;
     }
 }

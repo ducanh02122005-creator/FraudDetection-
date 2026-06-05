@@ -18,7 +18,7 @@ public class PredictionController {
     private final FraudDetectionService service;
 
     @PostMapping
-    public ResponseEntity<PredictionResponse> predict(
+    public ResponseEntity<Boolean> predict(
             @RequestBody PredictionRequest request
     ) throws Exception {
 

@@ -20,8 +20,7 @@ public class TransactionController {
     @PostMapping("/transacting")
     public ResponseEntity<TransactionResponse> transacting(
             @RequestBody TransactionRequest request
-            )
-    {
+            ) throws Exception {
         return ResponseEntity.ok(transactService.transaction(request));
     }
 }

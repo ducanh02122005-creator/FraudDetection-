@@ -11,4 +11,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class TransactionResponse {
     private String message;
+
+    private Double fraudProbability;
+
+    private Boolean fraud;
 }
