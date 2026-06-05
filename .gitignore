@@ -41,3 +41,4 @@ database.sql
 .mvn/
 target/
 *.jar
+/ml_service/
